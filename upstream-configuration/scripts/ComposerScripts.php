@@ -55,7 +55,7 @@ class ComposerScripts
         // is the same as the Pantheon PHP version (which is only major.minor).
         // If they do not match, force an update to the platform PHP version. If they
         // have the same major.minor version, then
-        $platformPhpVersion = static::getCurrentPlatformPhp($event);
+        $platformPhpVersion = static::getCurrentPlatformPhp($event) ?? '';
         $pantheonPhpVersion = static::getPantheonPhpVersion($event);
         $updatedPlatformPhpVersion = static::bestPhpPatchVersion($pantheonPhpVersion);
         if ((substr($platformPhpVersion, 0, strlen($pantheonPhpVersion)) != $pantheonPhpVersion) && !empty($updatedPlatformPhpVersion)) {
