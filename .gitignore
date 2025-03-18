@@ -29,6 +29,7 @@ web/wp-*
 !web/wp-cli.yml
 !web/wp-config.php
 !web/wp-config-pantheon.php
+!web/index.php
 web/xmlrpc.php
 
 # Logfiles should always be ignored.
