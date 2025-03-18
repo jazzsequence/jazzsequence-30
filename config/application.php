@@ -145,6 +145,19 @@ if ( file_exists( $env_config ) ) {
 	require_once $env_config;
 }
 
+/**
+ * Digital Ocean CDN Config.
+ *
+ * Uses Pantheon Secrets
+ */
+if ( function_exists( 'pantheon_get_secret' ) ) {
+    Config::define( 'AS3CF_SETTINGS', serialize( [
+        'provider' => 'do',
+        'access-key-id' => pantheon_get_secret( 'do-access-key-id' ),
+        'secret-access-key' => pantheon_get_secret( 'do-secret-access-key' ),
+    ] ) );
+}
+
 Config::apply();
 
 /**
