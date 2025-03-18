@@ -19,4 +19,6 @@
 <!--
 * re-implement actions
 * use a sandbox to test the actual site before deploying to production
+* implement linting
+* rebuild tagging scripts
 -->
