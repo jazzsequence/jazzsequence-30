@@ -4,8 +4,478 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39c465970ccc1f8ea821245db3694a6a",
+    "content-hash": "041d1e3e1149cbc53af1f5fab7e0bc2a",
     "packages": [
+        {
+            "name": "alleyinteractive/composer-wordpress-autoloader",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/composer-wordpress-autoloader.git",
+                "reference": "30acf9e3498a84af478e316ae3869fa362835695"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/composer-wordpress-autoloader/zipball/30acf9e3498a84af478e316ae3869fa362835695",
+                "reference": "30acf9e3498a84af478e316ae3869fa362835695",
+                "shasum": ""
+            },
+            "require": {
+                "alleyinteractive/wordpress-autoloader": "^1.1.1",
+                "composer-plugin-api": "^2.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "phpunit/phpunit": "^9.5.8",
+                "squizlabs/php_codesniffer": "^4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "ComposerWordPressAutoloader\\Plugin"
+            },
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "ComposerWordPressAutoloader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley Interactive",
+                    "email": "info@alley.co"
+                },
+                {
+                    "name": "Sean Fisher",
+                    "email": "sean@alley.co"
+                }
+            ],
+            "description": "Autoload files using WordPress File Conventions using Composer",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/composer-wordpress-autoloader/issues",
+                "source": "https://github.com/alleyinteractive/composer-wordpress-autoloader/tree/v1.1.0"
+            },
+            "time": "2023-12-06T20:21:22+00:00"
+        },
+        {
+            "name": "alleyinteractive/laminas-validator-extensions",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/laminas-validator-extensions.git",
+                "reference": "09fd68d1fda5179d5e972cf7053edf4eab903313"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/laminas-validator-extensions/zipball/09fd68d1fda5179d5e972cf7053edf4eab903313",
+                "reference": "09fd68d1fda5179d5e972cf7053edf4eab903313",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-validator": "^2.20",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alley\\": "src/Alley/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley",
+                    "email": "info@alley.com"
+                }
+            ],
+            "description": "Additional validation classes for the laminas-validator framework.",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/laminas-validator-extensions/issues",
+                "source": "https://github.com/alleyinteractive/laminas-validator-extensions/tree/v2.1.1"
+            },
+            "time": "2024-02-14T17:54:59+00:00"
+        },
+        {
+            "name": "alleyinteractive/wordpress-autoloader",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wordpress-autoloader.git",
+                "reference": "c7599d95f49f1cdc38fad19944a50b19ec0dd6ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wordpress-autoloader/zipball/c7599d95f49f1cdc38fad19944a50b19ec0dd6ca",
+                "reference": "c7599d95f49f1cdc38fad19944a50b19ec0dd6ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4.0|^8.0|^8.1"
+            },
+            "require-dev": {
+                "alleyinteractive/alley-coding-standards": "^0.3",
+                "phpunit/phpunit": "^9.5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/class-autoloader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley Interactive",
+                    "email": "info@alley.co"
+                }
+            ],
+            "description": "Autoload files using WordPress File Conventions",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/wordpress-autoloader/issues",
+                "source": "https://github.com/alleyinteractive/wordpress-autoloader/tree/v1.1.1"
+            },
+            "time": "2022-08-31T20:51:21+00:00"
+        },
+        {
+            "name": "alleyinteractive/wp-match-blocks",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wp-match-blocks.git",
+                "reference": "1fa48dc7059653df7ac46ec1fad05e36da236578"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-match-blocks/zipball/1fa48dc7059653df7ac46ec1fad05e36da236578",
+                "reference": "1fa48dc7059653df7ac46ec1fad05e36da236578",
+                "shasum": ""
+            },
+            "require": {
+                "alleyinteractive/composer-wordpress-autoloader": "^1.0.0",
+                "alleyinteractive/laminas-validator-extensions": "^2.0.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "alleyinteractive/alley-coding-standards": "^1.0.0",
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "mantle-framework/testkit": "^0.9"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-autoloader": {
+                    "autoload": {
+                        "Alley\\": "src/alley/"
+                    },
+                    "autoload-dev": {
+                        "Alley\\": "tests/alley/"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/alley/wp/match-blocks.php",
+                    "src/alley/wp/internals/internals.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley",
+                    "email": "info@alley.com"
+                }
+            ],
+            "description": "Match WordPress blocks in the given content.",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/wp-match-blocks/issues",
+                "source": "https://github.com/alleyinteractive/wp-match-blocks/tree/v3.1.0"
+            },
+            "time": "2023-11-02T03:13:33+00:00"
+        },
+        {
+            "name": "alleyinteractive/wp-seo",
+            "version": "v2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wp-seo.git",
+                "reference": "4b0fdc5bde80a15254bec464e644641d5ee6d137"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-seo/zipball/4b0fdc5bde80a15254bec464e644641d5ee6d137",
+                "reference": "4b0fdc5bde80a15254bec464e644641d5ee6d137",
+                "shasum": ""
+            },
+            "require": {
+                "alleyinteractive/composer-wordpress-autoloader": "^1.0",
+                "alleyinteractive/wp-type-extensions": "^2.1",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "alleyinteractive/alley-coding-standards": "^2.0",
+                "mantle-framework/testkit": "^1.4",
+                "szepeviktor/phpstan-wordpress": "^2.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-autoloader": {
+                    "autoload": {
+                        "Alley\\WP\\WP_SEO\\": "src"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley Interactive",
+                    "email": "opensource@alley.com"
+                }
+            ],
+            "description": "Enterprise SEO for large, performant sites",
+            "homepage": "https://github.com/alleyinteractive/wp-seo",
+            "keywords": [
+                "alleyinteractive",
+                "wp-seo"
+            ],
+            "support": {
+                "issues": "https://github.com/alleyinteractive/wp-seo/issues",
+                "source": "https://github.com/alleyinteractive/wp-seo/tree/v2.0"
+            },
+            "abandoned": true,
+            "time": "2025-03-11T15:49:22+00:00"
+        },
+        {
+            "name": "alleyinteractive/wp-type-extensions",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wp-type-extensions.git",
+                "reference": "5a225b53fc8336193a6b2ed71e610d8c5b57d200"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wp-type-extensions/zipball/5a225b53fc8336193a6b2ed71e610d8c5b57d200",
+                "reference": "5a225b53fc8336193a6b2ed71e610d8c5b57d200",
+                "shasum": ""
+            },
+            "require": {
+                "alleyinteractive/laminas-validator-extensions": "^2.0",
+                "alleyinteractive/wp-match-blocks": "^3.0",
+                "php": "^8.1",
+                "spatie/once": "^3.1"
+            },
+            "require-dev": {
+                "alleyinteractive/alley-coding-standards": "^1.0.0",
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "mantle-framework/testkit": "^0.9",
+                "szepeviktor/phpstan-wordpress": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-autoloader": {
+                    "autoload": {
+                        "Alley\\": "src/alley/"
+                    },
+                    "autoload-dev": {
+                        "Alley\\": "tests/alley/"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alley",
+                    "email": "info@alley.com"
+                }
+            ],
+            "description": "PHP interfaces and implementations for WordPress.",
+            "support": {
+                "issues": "https://github.com/alleyinteractive/wp-type-extensions/issues",
+                "source": "https://github.com/alleyinteractive/wp-type-extensions/tree/v2.2.0"
+            },
+            "time": "2024-05-29T02:13:50+00:00"
+        },
+        {
+            "name": "altis/browser-security",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/altis-browser-security.git",
+                "reference": "af3ddf02a1e4cd2534c718edf07012689f217139"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/altis-browser-security/zipball/af3ddf02a1e4cd2534c718edf07012689f217139",
+                "reference": "af3ddf02a1e4cd2534c718edf07012689f217139",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "files": [
+                    "inc/namespace.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made Limited",
+                    "email": "hello@humanmade.com"
+                }
+            ],
+            "description": "Browser security utilities for WordPress/Altis",
+            "support": {
+                "issues": "https://github.com/humanmade/altis-browser-security/issues",
+                "source": "https://github.com/humanmade/altis-browser-security/tree/2.1.0"
+            },
+            "time": "2023-05-08T13:18:20+00:00"
+        },
+        {
+            "name": "altis/workflow",
+            "version": "7.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/altis-workflow.git",
+                "reference": "1703f6d784fdb210f30d312734e9b8d0becb129b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/altis-workflow/zipball/1703f6d784fdb210f30d312734e9b8d0becb129b",
+                "reference": "1703f6d784fdb210f30d312734e9b8d0becb129b",
+                "shasum": ""
+            },
+            "require": {
+                "humanmade/publication-checklist": "~0.2.0",
+                "humanmade/workflows": "~0.3.18",
+                "php": ">=7.1"
+            },
+            "type": "package",
+            "extra": {
+                "altis": {
+                    "install-overrides": [
+                        "humanmade/workflows",
+                        "humanmade/publication-checklist"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "inc/namespace.php",
+                    "inc/notifications/namespace.php"
+                ],
+                "classmap": [
+                    "inc/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made Limited",
+                    "email": "hello@humanmade.com"
+                }
+            ],
+            "description": "Workflow module for Altis",
+            "support": {
+                "issues": "https://github.com/humanmade/altis-workflow/issues",
+                "source": "https://github.com/humanmade/altis-workflow/tree/7.0.2"
+            },
+            "time": "2022-02-15T16:40:09+00:00"
+        },
+        {
+            "name": "cmb2/cmb2",
+            "version": "v2.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CMB2/CMB2.git",
+                "reference": "2847828b5cce1b48d09427ee13e6f7c752704468"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CMB2/CMB2/zipball/2847828b5cce1b48d09427ee13e6f7c752704468",
+                "reference": "2847828b5cce1b48d09427ee13e6f7c752704468",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.4"
+            },
+            "require-dev": {
+                "apigen/apigen": "4.1.2",
+                "awesomemotive/am-cli-tools": ">=1.3.7",
+                "nette/utils": "2.5.3",
+                "phpunit/phpunit": "^6.5",
+                "yoast/phpunit-polyfills": "^1.1"
+            },
+            "suggest": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Sternberg",
+                    "email": "justin@dsgnwrks.pro",
+                    "homepage": "https://dsgnwrks.pro",
+                    "role": "Developer"
+                },
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com",
+                    "homepage": "https://github.com/WebDevStudios",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.",
+            "homepage": "https://github.com/CMB2/CMB2",
+            "keywords": [
+                "metabox",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/CMB2/CMB2/issues",
+                "source": "http://wordpress.org/support/plugin/cmb2"
+            },
+            "time": "2024-04-02T19:30:07+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.3.0",
@@ -201,6 +671,56 @@
             "time": "2022-12-20T22:53:13+00:00"
         },
         {
+            "name": "erusev/parsedown",
+            "version": "1.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "support": {
+                "issues": "https://github.com/erusev/parsedown/issues",
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
+            },
+            "time": "2019-12-30T22:54:17+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.1.3",
             "source": {
@@ -263,6 +783,1133 @@
             "time": "2024-07-20T21:45:45+00:00"
         },
         {
+            "name": "harvesthq/chosen",
+            "version": "v1.8.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harvesthq/chosen-package.git",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "Patrick Filler",
+                    "homepage": "https://github.com/pfiller"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "homepage": "https://github.com/stof"
+                },
+                {
+                    "name": "Ken Earley",
+                    "homepage": "https://github.com/kenearley"
+                }
+            ],
+            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
+            "homepage": "https://harvesthq.github.io/chosen/",
+            "keywords": [
+                "dropdown",
+                "form",
+                "input",
+                "multiselect",
+                "select",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/harvesthq/chosen-package/tree/v1.8.7"
+            },
+            "time": "2018-06-28T20:32:51+00:00"
+        },
+        {
+            "name": "humanmade/hm-redirects",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/hm-redirects.git",
+                "reference": "ca2ae6b19b151273a12c9588701e70210d35ca3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/hm-redirects/zipball/ca2ae6b19b151273a12c9588701e70210d35ca3d",
+                "reference": "ca2ae6b19b151273a12c9588701e70210d35ca3d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0|^2.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^0.5.0",
+                "phpunit/phpunit": "^7.5"
+            },
+            "default-branch": true,
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Simple plugin for handling WordPress redirects in a scalable manner.",
+            "homepage": "https://github.com/humanmade/hm-redirects",
+            "keywords": [
+                "redirects",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/humanmade/hm-redirects/issues",
+                "source": "https://github.com/humanmade/hm-redirects/tree/master"
+            },
+            "time": "2025-03-18T11:06:54+00:00"
+        },
+        {
+            "name": "humanmade/meta-tags",
+            "version": "0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/meta-tags.git",
+                "reference": "cbb3f2fa33def0d90deba7de4343224be5c48117"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/meta-tags/zipball/cbb3f2fa33def0d90deba7de4343224be5c48117",
+                "reference": "cbb3f2fa33def0d90deba7de4343224be5c48117",
+                "shasum": ""
+            },
+            "require-dev": {
+                "composer/installers": "^1.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made",
+                    "email": "hello@humanmade.com"
+                }
+            ],
+            "description": "Meta tag generator for Opengraph, Twitter & JSON+LD",
+            "support": {
+                "issues": "https://github.com/humanmade/meta-tags/issues",
+                "source": "https://github.com/humanmade/meta-tags/tree/master"
+            },
+            "time": "2020-09-07T14:07:22+00:00"
+        },
+        {
+            "name": "humanmade/orphan-command",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/orphan-command.git",
+                "reference": "82f1d9edf41aae03ee54fb97b8c8f6b377a40ab7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/orphan-command/zipball/82f1d9edf41aae03ee54fb97b8c8f6b377a40ab7",
+                "reference": "82f1d9edf41aae03ee54fb97b8c8f6b377a40ab7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "humanmade/coding-standards": "^1.1",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "wp-cli-package",
+            "extra": {
+                "commands": [
+                    "orphan blog meta delete",
+                    "orphan blog meta list",
+                    "orphan blog meta query",
+                    "orphan comment delete",
+                    "orphan comment list",
+                    "orphan comment query",
+                    "orphan comment meta delete",
+                    "orphan comment meta list",
+                    "orphan comment meta query",
+                    "orphan post delete",
+                    "orphan post list",
+                    "orphan post query",
+                    "orphan post meta delete",
+                    "orphan post meta list",
+                    "orphan post meta query",
+                    "orphan revision delete",
+                    "orphan revision list",
+                    "orphan revision query",
+                    "orphan term meta delete",
+                    "orphan term meta list",
+                    "orphan term meta query",
+                    "orphan user meta delete",
+                    "orphan user meta list",
+                    "orphan user meta query"
+                ]
+            },
+            "autoload": {
+                "files": [
+                    "orphan-command.php"
+                ],
+                "psr-4": {
+                    "HumanMade\\OrphanCommand\\": "inc/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made",
+                    "homepage": "https://humanmade.com"
+                }
+            ],
+            "description": "WP-CLI command to list and delete orphan WordPress entities and metadata.",
+            "homepage": "https://github.com/humanmade/orphan-command",
+            "support": {
+                "issues": "https://github.com/humanmade/orphan-command/issues",
+                "source": "https://github.com/humanmade/orphan-command/tree/1.1.1"
+            },
+            "time": "2024-12-04T17:14:47+00:00"
+        },
+        {
+            "name": "humanmade/publication-checklist",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/publication-checklist.git",
+                "reference": "11c64aa8422082393e523aa4807c748104c1a124"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/publication-checklist/zipball/11c64aa8422082393e523aa4807c748104c1a124",
+                "reference": "11c64aa8422082393e523aa4807c748104c1a124",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made",
+                    "email": "hello@humanmade.com"
+                }
+            ],
+            "description": "Run checks and enforce conditions before posts are published.",
+            "support": {
+                "issues": "https://github.com/humanmade/publication-checklist/issues",
+                "source": "https://github.com/humanmade/publication-checklist/tree/0.2.3"
+            },
+            "time": "2021-06-21T11:14:32+00:00"
+        },
+        {
+            "name": "humanmade/two-factor",
+            "version": "0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/two-factor.git",
+                "reference": "2d4b9ecfb2890d3f41c888778e0a74772a75c13a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/two-factor/zipball/2d4b9ecfb2890d3f41c888778e0a74772a75c13a",
+                "reference": "2d4b9ecfb2890d3f41c888778e0a74772a75c13a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "automattic/vipwpcs": "^2.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpcompatibility/php-compatibility": "10.x-dev as 9.99.99",
+                "phpcompatibility/phpcompatibility-wp": "dev-master",
+                "phpunit/phpunit": "^9.5",
+                "roots/wordpress-core-installer": "^1.100",
+                "roots/wordpress-full": "~6.0",
+                "spatie/phpunit-watcher": "^1.23",
+                "wp-coding-standards/wpcs": "^2.3",
+                "wp-phpunit/wp-phpunit": "^6.0",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "wordpress"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Two-Factor Authentication for WordPress.",
+            "homepage": "https://wordpress.org/plugins/two-factor/",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/two-factor/",
+                "issues": "https://github.com/WordPress/two-factor/issues",
+                "source": "https://github.com/WordPress/two-factor"
+            },
+            "time": "2023-09-04T20:35:54+00:00"
+        },
+        {
+            "name": "humanmade/wordpress-importer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/wordpress-importer",
+                "reference": "master"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "humanmade/workflows",
+            "version": "0.3.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/Workflows.git",
+                "reference": "f5ecc7d40bfc98186d0ec7ea7da7f99c2eecc253"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/Workflows/zipball/f5ecc7d40bfc98186d0ec7ea7da7f99c2eecc253",
+                "reference": "f5ecc7d40bfc98186d0ec7ea7da7f99c2eecc253",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "humanmade/coding-standards": "^0.5.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Robert O'Rourke",
+                    "email": "rob@humanmade.com"
+                }
+            ],
+            "description": "Workflow management for WordPress, an extensible event and notification system.",
+            "support": {
+                "issues": "https://github.com/humanmade/Workflows/issues",
+                "source": "https://github.com/humanmade/Workflows/tree/0.3.18"
+            },
+            "time": "2022-02-10T15:36:23+00:00"
+        },
+        {
+            "name": "jazzsequence/address-book",
+            "version": "0.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazzsequence/Address-Book.git",
+                "reference": "f412fbb8610d85fd9d56f621fb92fb5d8e63437b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazzsequence/Address-Book/zipball/f412fbb8610d85fd9d56f621fb92fb5d8e63437b",
+                "reference": "f412fbb8610d85fd9d56f621fb92fb5d8e63437b",
+                "shasum": ""
+            },
+            "require": {
+                "cmb2/cmb2": "^2.10",
+                "johnbillion/extended-cpts": "^5.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reynolds",
+                    "email": "me@chrisreynolds.io"
+                }
+            ],
+            "description": "A WordPress plugin for storing and maintaining addresses.",
+            "support": {
+                "issues": "https://github.com/jazzsequence/Address-Book/issues",
+                "source": "https://github.com/jazzsequence/Address-Book/tree/0.3.4"
+            },
+            "time": "2023-06-14T19:18:21+00:00"
+        },
+        {
+            "name": "jazzsequence/dashboard-changelog",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazzsequence/dashboard-changelog.git",
+                "reference": "1a90ce1b2554563b6431fab7710b50e881fdee1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazzsequence/dashboard-changelog/zipball/1a90ce1b2554563b6431fab7710b50e881fdee1d",
+                "reference": "1a90ce1b2554563b6431fab7710b50e881fdee1d",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.7",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5",
+                "roots/wordpress": "^5.0",
+                "wp-phpunit/wp-phpunit": "^5.8"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reynolds",
+                    "email": "me@chrisreynolds.io"
+                }
+            ],
+            "description": "Adds a GitHub release widget to your WordPress dashboard for a public GitHub repository.",
+            "support": {
+                "issues": "https://github.com/jazzsequence/dashboard-changelog/issues",
+                "source": "https://github.com/jazzsequence/dashboard-changelog/tree/1.1.0"
+            },
+            "time": "2021-11-01T17:55:11+00:00"
+        },
+        {
+            "name": "jazzsequence/games-collector",
+            "version": "1.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazzsequence/games-collector.git",
+                "reference": "bd1bbe8049cd6db81d2a4ace66bc6edcd81360b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazzsequence/games-collector/zipball/bd1bbe8049cd6db81d2a4ace66bc6edcd81360b7",
+                "reference": "bd1bbe8049cd6db81d2a4ace66bc6edcd81360b7",
+                "shasum": ""
+            },
+            "require": {
+                "cmb2/cmb2": "^2.6",
+                "harvesthq/chosen": "^1.8",
+                "johnbillion/extended-cpts": "^5.0"
+            },
+            "require-dev": {
+                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/wpunit-helpers": "^2.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reynolds",
+                    "email": "chris@jazzsequence.com"
+                }
+            ],
+            "description": "A WordPress plugin to catalog all your tabletop (or other) games in your WordPress site and display a list of games in your collection.",
+            "support": {
+                "issues": "https://github.com/jazzsequence/games-collector/issues",
+                "source": "https://github.com/jazzsequence/games-collector/tree/1.3.6"
+            },
+            "time": "2024-10-10T17:03:48+00:00"
+        },
+        {
+            "name": "jazzsequence/jz-222",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazzsequence/jz-222.git",
+                "reference": "ea4de73b220b7cd72987066513b8135682a4865e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazzsequence/jz-222/zipball/ea4de73b220b7cd72987066513b8135682a4865e",
+                "reference": "ea4de73b220b7cd72987066513b8135682a4865e",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "wordpress-theme",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reynolds",
+                    "email": "chris@jazzsequence.com"
+                }
+            ],
+            "description": "Experimental child theme for Twenty Twenty-Two",
+            "support": {
+                "source": "https://github.com/jazzsequence/jz-222/tree/main",
+                "issues": "https://github.com/jazzsequence/jz-222/issues"
+            },
+            "time": "2022-01-28T22:32:27+00:00"
+        },
+        {
+            "name": "jazzsequence/recipe-box",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jazzsequence/recipe-box.git",
+                "reference": "554ebea8ae98e4a9bde9dd637dfe4ffca4a0314c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jazzsequence/recipe-box/zipball/554ebea8ae98e4a9bde9dd637dfe4ffca4a0314c",
+                "reference": "554ebea8ae98e4a9bde9dd637dfe4ffca4a0314c",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Reynolds",
+                    "email": "me@chrisreynolds.io"
+                }
+            ],
+            "description": "Easily store and publish recipes in WordPress.",
+            "support": {
+                "issues": "https://github.com/jazzsequence/recipe-box/issues",
+                "source": "https://github.com/jazzsequence/recipe-box/tree/0.3.5"
+            },
+            "time": "2025-01-23T05:21:21+00:00"
+        },
+        {
+            "name": "johnbillion/args",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/args.git",
+                "reference": "ef9b110c4379ded08300c5484e4fa67455697c5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/args/zipball/ef9b110c4379ded08300c5484e4fa67455697c5b",
+                "reference": "ef9b110c4379ded08300c5484e4fa67455697c5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "ergebnis/json-printer": "3.7.0",
+                "ergebnis/phpstan-rules": "1.0.0",
+                "humanmade/coding-standards": "1.2.1",
+                "johnbillion/falsey-assertequals-detector": "^3",
+                "phpdocumentor/reflection": "~4.0 || ~5.0",
+                "phpstan/phpstan": "1.12.12",
+                "phpstan/phpstan-phpunit": "1.4.1",
+                "phpstan/phpstan-strict-rules": "1.6.1",
+                "phpunit/phpunit": "^9.0",
+                "roots/wordpress-core-installer": "1.100.0",
+                "roots/wordpress-full": "6.7",
+                "szepeviktor/phpstan-wordpress": "1.3.5"
+            },
+            "type": "library",
+            "extra": {
+                "args-shapes": [
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/category.php",
+                        "param": "args",
+                        "function": "\\get_categories()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/comment.php",
+                        "param": "args",
+                        "function": "\\get_comments()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "args",
+                        "function": "\\get_posts()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/category.php",
+                        "param": "args",
+                        "function": "\\get_tags()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\get_terms()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/user.php",
+                        "param": "args",
+                        "function": "\\get_users()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/general-template.php",
+                        "param": "args",
+                        "function": "\\paginate_links()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/blocks.php",
+                        "param": "args",
+                        "function": "\\register_block_type()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/meta.php",
+                        "param": "args",
+                        "function": "\\register_meta()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "args",
+                        "function": "\\register_post_meta()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "args",
+                        "function": "\\register_post_status()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "args",
+                        "function": "\\register_post_type()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/rest-api.php",
+                        "param": "args",
+                        "function": "\\register_rest_field()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/option.php",
+                        "param": "args",
+                        "function": "\\register_setting()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\register_taxonomy()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\register_term_meta()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\wp_count_terms()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/functions.php",
+                        "param": "args",
+                        "function": "\\wp_die()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/category-template.php",
+                        "param": "args",
+                        "function": "\\wp_dropdown_categories()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/l10n.php",
+                        "param": "args",
+                        "function": "\\wp_dropdown_languages()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/category-template.php",
+                        "param": "args",
+                        "function": "\\wp_generate_tag_cloud()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/nav-menu.php",
+                        "param": "args",
+                        "function": "\\wp_get_nav_menus()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\wp_get_object_terms()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "postarr",
+                        "function": "\\wp_insert_post()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\wp_insert_term()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/user.php",
+                        "param": "userdata",
+                        "function": "\\wp_insert_user()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/nav-menu-template.php",
+                        "param": "args",
+                        "function": "\\wp_nav_menu()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_remote_get()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_remote_head()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_remote_post()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_remote_request()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_safe_remote_get()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_safe_remote_head()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_safe_remote_post()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/http.php",
+                        "param": "args",
+                        "function": "\\wp_safe_remote_request()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/post.php",
+                        "param": "postarr",
+                        "function": "\\wp_update_post()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/taxonomy.php",
+                        "param": "args",
+                        "function": "\\wp_update_term()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/user.php",
+                        "param": "userdata",
+                        "function": "\\wp_update_user()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-block-type.php",
+                        "param": "args",
+                        "method": "\\WP_Block_Type::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-comment-query.php",
+                        "param": "query",
+                        "method": "\\WP_Comment_Query::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-customize-control.php",
+                        "param": "args",
+                        "method": "\\WP_Customize_Control::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-customize-manager.php",
+                        "param": "args",
+                        "method": "\\WP_Customize_Manager::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-customize-panel.php",
+                        "param": "args",
+                        "method": "\\WP_Customize_Panel::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-customize-section.php",
+                        "param": "args",
+                        "method": "\\WP_Customize_Section::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-customize-setting.php",
+                        "param": "args",
+                        "method": "\\WP_Customize_Setting::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-http.php",
+                        "param": "args",
+                        "method": "\\WP_Http::request()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-query.php",
+                        "param": "query",
+                        "method": "\\WP_Query::parse_query()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-term-query.php",
+                        "param": "query",
+                        "method": "\\WP_Term_Query::__construct()"
+                    },
+                    {
+                        "file": "vendor/wordpress/wordpress/wp-includes/class-wp-user-query.php",
+                        "param": "query",
+                        "method": "\\WP_User_Query::prepare_query()"
+                    }
+                ],
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Args\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "I don't want to get into an argument about this.",
+            "support": {
+                "issues": "https://github.com/johnbillion/args/issues",
+                "source": "https://github.com/johnbillion/args/tree/2.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-11-30T23:22:24+00:00"
+        },
+        {
+            "name": "johnbillion/extended-cpts",
+            "version": "5.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/extended-cpts.git",
+                "reference": "57f2e74155a12e7a37d07250e6739dbab5a732b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/57f2e74155a12e7a37d07250e6739dbab5a732b3",
+                "reference": "57f2e74155a12e7a37d07250e6739dbab5a732b3",
+                "shasum": ""
+            },
+            "require": {
+                "johnbillion/args": "^1.4.1 || ^2.0",
+                "php": ">= 7.4.0"
+            },
+            "require-dev": {
+                "automattic/phpcs-neutron-standard": "1.7.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "johnbillion/falsey-assertequals-detector": "*",
+                "johnbillion/plugin-infrastructure": "dev-trunk",
+                "johnbillion/wp-compat": "0.3.1",
+                "lucatume/wp-browser": "3.2.3",
+                "phpcompatibility/phpcompatibility-wp": "2.1.5",
+                "phpstan/phpstan": "1.12.12",
+                "phpstan/phpstan-phpunit": "1.4.1",
+                "roots/wordpress-core-installer": "1.100.0",
+                "roots/wordpress-full": "*",
+                "szepeviktor/phpstan-wordpress": "1.3.5",
+                "wp-coding-standards/wpcs": "2.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "ExtCPTs\\": "src",
+                    "ExtCPTs\\Tests\\": "tests/integration"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
+            "homepage": "https://github.com/johnbillion/extended-cpts/",
+            "support": {
+                "issues": "https://github.com/johnbillion/extended-cpts/issues",
+                "source": "https://github.com/johnbillion/extended-cpts/tree/5.0.11"
+            },
+            "time": "2024-11-30T23:16:17+00:00"
+        },
+        {
+            "name": "laminas/laminas-servicemanager",
+            "version": "3.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-servicemanager.git",
+                "reference": "a8640182b892b99767d54404d19c5c3b3699f79b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/a8640182b892b99767d54404d19c5c3b3699f79b",
+                "reference": "a8640182b892b99767d54404d19c5c3b3699f79b",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-stdlib": "^3.19",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+                "psr/container": "^1.0"
+            },
+            "conflict": {
+                "ext-psr": "*",
+                "laminas/laminas-code": "<4.10.0",
+                "zendframework/zend-code": "<3.3.1",
+                "zendframework/zend-servicemanager": "*"
+            },
+            "provide": {
+                "psr/container-implementation": "^1.0"
+            },
+            "replace": {
+                "container-interop/container-interop": "^1.2.0"
+            },
+            "require-dev": {
+                "composer/package-versions-deprecated": "^1.11.99.5",
+                "friendsofphp/proxy-manager-lts": "^1.0.18",
+                "laminas/laminas-code": "^4.14.0",
+                "laminas/laminas-coding-standard": "~2.5.0",
+                "laminas/laminas-container-config-test": "^0.8",
+                "mikey179/vfsstream": "^1.6.12",
+                "phpbench/phpbench": "^1.3.1",
+                "phpunit/phpunit": "^10.5.36",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "vimeo/psalm": "^5.26.1"
+            },
+            "suggest": {
+                "friendsofphp/proxy-manager-lts": "ProxyManager ^2.1.1 to handle lazy initialization of services"
+            },
+            "bin": [
+                "bin/generate-deps-for-config-factory",
+                "bin/generate-factory-for-class"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ServiceManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Factory-Driven Dependency Injection Container",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "PSR-11",
+                "dependency-injection",
+                "di",
+                "dic",
+                "laminas",
+                "service-manager",
+                "servicemanager"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-servicemanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-servicemanager/issues",
+                "rss": "https://github.com/laminas/laminas-servicemanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-servicemanager"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2024-10-28T21:32:16+00:00"
+        },
+        {
+            "name": "laminas/laminas-stdlib",
+            "version": "3.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-stdlib.git",
+                "reference": "8974a1213be42c3e2f70b2c27b17f910291ab2f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/8974a1213be42c3e2f70b2c27b17f910291ab2f4",
+                "reference": "8974a1213be42c3e2f70b2c27b17f910291ab2f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "conflict": {
+                "zendframework/zend-stdlib": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^3.0",
+                "phpbench/phpbench": "^1.3.1",
+                "phpunit/phpunit": "^10.5.38",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "vimeo/psalm": "^5.26.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "SPL extensions, array utilities, error handlers, and more",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "stdlib"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-stdlib/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-stdlib/issues",
+                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
+                "source": "https://github.com/laminas/laminas-stdlib"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2024-10-29T13:46:07+00:00"
+        },
+        {
+            "name": "laminas/laminas-validator",
+            "version": "2.64.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-validator.git",
+                "reference": "771e504760448ac7af660710237ceb93be602e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-validator/zipball/771e504760448ac7af660710237ceb93be602e08",
+                "reference": "771e504760448ac7af660710237ceb93be602e08",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-servicemanager": "^3.21.0",
+                "laminas/laminas-stdlib": "^3.19",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+                "psr/http-message": "^1.0.1 || ^2.0.0"
+            },
+            "conflict": {
+                "zendframework/zend-validator": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "^2.5",
+                "laminas/laminas-db": "^2.20",
+                "laminas/laminas-filter": "^2.35.2",
+                "laminas/laminas-i18n": "^2.26.0",
+                "laminas/laminas-session": "^2.20",
+                "laminas/laminas-uri": "^2.11.0",
+                "phpunit/phpunit": "^10.5.20",
+                "psalm/plugin-phpunit": "^0.19.0",
+                "psr/http-client": "^1.0.3",
+                "psr/http-factory": "^1.1.0",
+                "vimeo/psalm": "^5.24.0"
+            },
+            "suggest": {
+                "laminas/laminas-db": "Laminas\\Db component, required by the (No)RecordExists validator",
+                "laminas/laminas-filter": "Laminas\\Filter component, required by the Digits validator",
+                "laminas/laminas-i18n": "Laminas\\I18n component to allow translation of validation error messages",
+                "laminas/laminas-i18n-resources": "Translations of validator messages",
+                "laminas/laminas-servicemanager": "Laminas\\ServiceManager component to allow using the ValidatorPluginManager and validator chains",
+                "laminas/laminas-session": "Laminas\\Session component, ^2.8; required by the Csrf validator",
+                "laminas/laminas-uri": "Laminas\\Uri component, required by the Uri and Sitemap\\Loc validators",
+                "psr/http-message": "psr/http-message, required when validating PSR-7 UploadedFileInterface instances via the Upload and UploadFile validators"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "component": "Laminas\\Validator",
+                    "config-provider": "Laminas\\Validator\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Validation classes for a wide range of domains, and the ability to chain validators to create complex validation criteria",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "validator"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-validator/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-validator/issues",
+                "rss": "https://github.com/laminas/laminas-validator/releases.atom",
+                "source": "https://github.com/laminas/laminas-validator"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2024-11-26T21:29:17+00:00"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v2.1.1",
             "source": {
@@ -318,6 +1965,45 @@
             "time": "2024-12-03T01:02:28+00:00"
         },
         {
+            "name": "pantheon-systems/pantheon-advanced-page-cache",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheon-systems/pantheon-advanced-page-cache.git",
+                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheon-systems/pantheon-advanced-page-cache/zipball/9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
+                "reference": "9749ea2a7d06f036b3e96f8204541dbd3e5949cb",
+                "shasum": ""
+            },
+            "require-dev": {
+                "behat/behat": "^3.1",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-goutte-driver": "^1.2",
+                "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
+                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/wpunit-helpers": "^2.0",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pantheon",
+                    "email": "noreply@pantheon.io"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/issues",
+                "source": "https://github.com/pantheon-systems/pantheon-advanced-page-cache/tree/2.1.1"
+            },
+            "time": "2025-02-25T23:31:41+00:00"
+        },
+        {
             "name": "pantheon-systems/pantheon-mu-plugin",
             "version": "1.5.3",
             "source": {
@@ -351,6 +2037,49 @@
                 "source": "https://github.com/pantheon-systems/pantheon-mu-plugin/tree/1.5.3"
             },
             "time": "2025-03-11T21:43:35+00:00"
+        },
+        {
+            "name": "pantheon-systems/wp-native-php-sessions",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pantheon-systems/wp-native-php-sessions.git",
+                "reference": "1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pantheon-systems/wp-native-php-sessions/zipball/1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe",
+                "reference": "1c7f84e4a89ae4dc1ee62f90725af2f281fc50fe",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pantheon-systems/pantheon-wordpress-upstream-tests": "dev-master",
+                "pantheon-systems/pantheon-wp-coding-standards": "^2.0",
+                "pantheon-systems/wpunit-helpers": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^2.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pantheon",
+                    "email": "noreply@pantheon.io"
+                },
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@handbuilt.co"
+                }
+            ],
+            "description": "native PHP sessions stored in the database for WordPress.",
+            "support": {
+                "issues": "https://github.com/pantheon-systems/wp-native-php-sessions/issues",
+                "source": "https://github.com/pantheon-systems/wp-native-php-sessions/tree/1.4.3"
+            },
+            "time": "2023-11-13T19:20:32+00:00"
         },
         {
             "name": "pantheon-upstreams/upstream-configuration",
@@ -442,6 +2171,107 @@
                 }
             ],
             "time": "2024-07-20T21:41:07+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/1.1.2"
+            },
+            "time": "2021-11-05T16:50:12+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
         },
         {
             "name": "roots/bedrock-autoloader",
@@ -883,6 +2713,68 @@
             "time": "2024-09-10T23:11:22+00:00"
         },
         {
+            "name": "spatie/once",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/once.git",
+                "reference": "25252b821765d72566be17c52ea05b35329f0f8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/once/zipball/25252b821765d72566be17c52ea05b35329f0f8f",
+                "reference": "25252b821765d72566be17c52ea05b35329f0f8f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21",
+                "symfony/var-dumper": "^5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Once\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A magic memoization function",
+            "homepage": "https://github.com/spatie/once",
+            "keywords": [
+                "cache",
+                "callable",
+                "memoization",
+                "once",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/once/tree/3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                }
+            ],
+            "time": "2024-05-27T09:17:58+00:00"
+        },
+        {
             "name": "symfony/polyfill-ctype",
             "version": "v1.31.0",
             "source": {
@@ -1206,40 +3098,346 @@
             "time": "2024-07-20T21:52:34+00:00"
         },
         {
-            "name": "wpackagist-plugin/pantheon-advanced-page-cache",
-            "version": "2.1.1",
+            "name": "wpackagist-plugin/akismet",
+            "version": "5.3.7",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pantheon-advanced-page-cache/",
-                "reference": "tags/2.1.1"
+                "url": "https://plugins.svn.wordpress.org/akismet/",
+                "reference": "tags/5.3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.2.1.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/akismet.5.3.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pantheon-advanced-page-cache/"
+            "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
-            "name": "wpackagist-plugin/wp-native-php-sessions",
-            "version": "1.4.3",
+            "name": "wpackagist-plugin/altis-accelerate",
+            "version": "3.2.7",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-native-php-sessions/",
-                "reference": "tags/1.4.3"
+                "url": "https://plugins.svn.wordpress.org/altis-accelerate/",
+                "reference": "tags/3.2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-php-sessions.1.4.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/altis-accelerate.3.2.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-native-php-sessions/"
+            "homepage": "https://wordpress.org/plugins/altis-accelerate/"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "version": "3.2.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
+                "reference": "tags/3.2.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.3.2.11.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
+        },
+        {
+            "name": "wpackagist-plugin/autoblue",
+            "version": "0.0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autoblue/",
+                "reference": "tags/0.0.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autoblue.0.0.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autoblue/"
+        },
+        {
+            "name": "wpackagist-plugin/glotpress",
+            "version": "4.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/glotpress/",
+                "reference": "tags/4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/glotpress.4.0.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/glotpress/"
+        },
+        {
+            "name": "wpackagist-plugin/gutenberg",
+            "version": "20.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/gutenberg/",
+                "reference": "tags/20.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.20.4.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gutenberg/"
+        },
+        {
+            "name": "wpackagist-plugin/ninja-forms",
+            "version": "3.9.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ninja-forms/",
+                "reference": "tags/3.9.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.9.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ninja-forms/"
+        },
+        {
+            "name": "wpackagist-plugin/organize-series",
+            "version": "2.13.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/organize-series/",
+                "reference": "tags/2.13.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/organize-series.2.13.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/organize-series/"
+        },
+        {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "3.1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/3.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+        },
+        {
+            "name": "wpackagist-plugin/storyftw",
+            "version": "0.1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/storyftw/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/storyftw.zip?timestamp=1425145416"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/storyftw/"
+        },
+        {
+            "name": "wpackagist-plugin/term-management-tools",
+            "version": "2.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/term-management-tools/",
+                "reference": "tags/2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/term-management-tools.2.0.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/term-management-tools/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-syntax",
+            "version": "1.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-syntax/",
+                "reference": "tags/1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-syntax.1.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-syntax/"
+        },
+        {
+            "name": "wpackagist-plugin/wpmovielibrary",
+            "version": "2.1.4.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpmovielibrary/",
+                "reference": "tags/2.1.4.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpmovielibrary.2.1.4.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpmovielibrary/"
+        },
+        {
+            "name": "wpackagist-theme/ryu",
+            "version": "1.4.7",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/ryu/",
+                "reference": "1.4.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/ryu.1.4.7.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/ryu/"
+        },
+        {
+            "name": "wpackagist-theme/twentynineteen",
+            "version": "3.0",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentynineteen/",
+                "reference": "3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.3.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentynineteen/"
+        },
+        {
+            "name": "wpackagist-theme/twentyseventeen",
+            "version": "3.8",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
+                "reference": "3.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.3.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentyseventeen/"
+        },
+        {
+            "name": "wpackagist-theme/twentytwenty",
+            "version": "2.8",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentytwenty/",
+                "reference": "2.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentytwenty.2.8.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentytwenty/"
+        },
+        {
+            "name": "wpackagist-theme/twentytwentyone",
+            "version": "2.4",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentytwentyone/",
+                "reference": "2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentytwentyone.2.4.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentytwentyone/"
+        },
+        {
+            "name": "wpackagist-theme/twentytwentythree",
+            "version": "1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentytwentythree/",
+                "reference": "1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentytwentythree.1.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentytwentythree/"
         },
         {
             "name": "wpackagist-theme/twentytwentytwo",
@@ -1483,6 +3681,153 @@
                 "source": "https://github.com/php-fig-rectified/psr2r-sniffer/tree/1.5.1"
             },
             "time": "2023-09-23T19:16:19+00:00"
+        },
+        {
+            "name": "johnbillion/query-monitor",
+            "version": "3.17.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/query-monitor.git",
+                "reference": "e35dbc8ac937178d214c04552a0a802dacf6c79b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/query-monitor/zipball/e35dbc8ac937178d214c04552a0a802dacf6c79b",
+                "reference": "e35dbc8ac937178d214c04552a0a802dacf6c79b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+                "johnbillion/plugin-infrastructure": "dev-trunk",
+                "johnbillion/wp-compat": "0.3.1",
+                "lucatume/wp-browser": "3.2.3",
+                "phpcompatibility/phpcompatibility-wp": "2.1.5",
+                "phpstan/phpstan": "1.12.11",
+                "phpstan/phpstan-deprecation-rules": "1.2.1",
+                "phpstan/phpstan-phpunit": "1.4.1",
+                "roots/wordpress-core-installer": "1.100.0",
+                "roots/wordpress-full": "*",
+                "squizlabs/php_codesniffer": "3.11.1",
+                "szepeviktor/phpstan-wordpress": "1.3.5",
+                "wp-coding-standards/wpcs": "2.3.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "classmap": [
+                    "classes",
+                    "data",
+                    "output"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "The Developer Tools panel for WordPress.",
+            "homepage": "https://querymonitor.com/",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/query-monitor",
+                "issues": "https://github.com/johnbillion/query-monitor/issues",
+                "security": "https://patchstack.com/database/vdp/query-monitor",
+                "source": "https://github.com/johnbillion/query-monitor"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-02-04T22:13:08+00:00"
+        },
+        {
+            "name": "johnbillion/wp-crontrol",
+            "version": "1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/wp-crontrol.git",
+                "reference": "eb1a688c457d19a9bef9449eae93ff8495f227a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/wp-crontrol/zipball/eb1a688c457d19a9bef9449eae93ff8495f227a9",
+                "reference": "eb1a688c457d19a9bef9449eae93ff8495f227a9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "johnbillion/plugin-infrastructure": "dev-trunk",
+                "johnbillion/wp-compat": "0.2.3",
+                "lucatume/wp-browser": "3.2.1",
+                "phpcompatibility/phpcompatibility-wp": "2.1.5",
+                "phpstan/phpstan": "1.12.2",
+                "roots/wordpress-core-installer": "1.100.0",
+                "roots/wordpress-full": "*",
+                "szepeviktor/phpstan-wordpress": "1.3.5",
+                "wp-coding-standards/wpcs": "3.1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "wordpress-install-dir": "vendor/wordpress/wordpress"
+            },
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                },
+                {
+                    "name": "Edward Dale",
+                    "homepage": "http://scompt.com/"
+                }
+            ],
+            "description": "Take control of the cron events on your WordPress website",
+            "homepage": "https://wp-crontrol.com",
+            "support": {
+                "forum": "https://wordpress.org/support/plugin/wp-crontrol",
+                "issues": "https://github.com/johnbillion/wp-crontrol/issues",
+                "security": "https://patchstack.com/database/vdp/wp-crontrol",
+                "source": "https://github.com/johnbillion/wp-crontrol"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-13T18:33:37+00:00"
         },
         {
             "name": "pantheon-systems/pantheon-wp-coding-standards",
@@ -3156,15 +5501,17 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
+        "alleyinteractive/wp-seo": 20,
+        "jazzsequence/jz-222": 20,
         "pantheon-upstreams/upstream-configuration": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4"
+        "php": ">=8.2"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
